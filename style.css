@@ -93,7 +93,6 @@ main {
   padding: 24px;
   flex-grow: 1;
   overflow-y: auto;
-  display: flex;
 }
 
 .search-bar {
@@ -121,4 +120,50 @@ input {
   grid-template-columns: repeat(autofill, minmax(180px, 1fr));
   gap: 24px;
   margin-bottom: 40px;
+}
+
+.artists-grid,
+.album-card {
+  background-color: #181818;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+.artists-grid:hover,
+.album-card:hover {
+  background-color: #282828;
+}
+
+.artists-grid,
+img,
+.album-card,
+img {
+  width: auto;
+  max-height: 80%;
+}
+
+.artists-grid,
+h3,
+.album-card,
+h3 {
+  font-size: 12px;
+}
+
+.artists-grid,
+p,
+.album-card,
+p {
+  font-size: 10px;
+  color: #b7b3b6;
+}
+
+.content {
+  margin-top: 40px;
+}
+
+.content h2 {
+  margin-bottom: 10px;
 }

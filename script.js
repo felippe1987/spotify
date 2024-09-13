@@ -1,3 +1,4 @@
+//adicionando imagens com títulos ao app
 document.addEventListener("DOMContentLoaded", () => {
   const artistsData = [
     { name: "Henrique & Juliano", Image: "./img/artista-henrique-juliano.jpg" },
@@ -32,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Escândalo Íntimo",
       artist: "Luísa Sonza",
-      Image: "./img/ album-escandalo.jpg",
+      Image: "./img/album-escandalo.jpg",
     },
   ];
 
@@ -45,8 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     artistCard.innerHTML = `
      <img src="${artist.Image}" alt= "imagem do ${artist.name}">
-     <h3>${artist.name}</h3>
-     <p>artista</p>
+     <div>
+        <h3>${artist.name}</h3>
+        <p>artista</p>
+     </div>
     `;
 
     artistGrid.appendChild(artistCard);
@@ -58,7 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     albumCard.innerHTML = `
      <img src="${album.Image}" alt= "imagem do ${album.name}">
-     <p>${album.name}</p>
+     <div>
+        <h3>${album.name}</h3>
+        <p>${album.artist}</p>
+     </div>
     `;
 
     albumsGrid.appendChild(albumCard);
